@@ -15,19 +15,18 @@ public class Student {
     /**
      * get value of student's last name. 
      *
-     * @param student to get last name.
      * @return String containing student last name.
      */
-    public String getLastName (Student s) {
-	return s.lastName;
+    public String getLastName () {
+	return this.lastName;
     }
 
     /**
-     * sets Last name of student s.
+     * sets Last name of student.
      *
-     * @param student to set last name, string that contains last name.
+     * @param string that contains last name.
      */
-    private void setLastName (Student s, String lastName) {
-	s.lastName = lastName;
+    private void setLastName (String lastName) {
+	this.lastName = lastName;
     }
 }
