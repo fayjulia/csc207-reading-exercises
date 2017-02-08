@@ -1,0 +1,22 @@
+public static int max(int[] arr) {
+    if (arr.length == 0) {
+        throw new IllegalArgumentException();
+    } else {
+        int ret = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (ret < arr[i]) {
+                ret = arr[i];
+	    } }
+	return ret; }
+}
+
+Inputs: len of arr, n
+Count: 2 array acceses that happen in the for loop
+
+worst: the arr is in ascending order, must enter the if statement every interation
+f(n) = 2n
+best: the arr is in descending order, must only enter if statement on first interation
+f(n) = n
+avg: enter if statement on half the interations
+f(n) = n + n/2
+
