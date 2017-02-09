@@ -1,0 +1,1 @@
+O(n) is still valid in this problem. The example in the reading was O(n) as well, but slower. My big O does not change with a changing constant k. These are all still linear order problems. 
