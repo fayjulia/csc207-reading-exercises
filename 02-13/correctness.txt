@@ -1,0 +1,17 @@
+a.
+
+Stack       Heap
+----        ----
+c           Counter
+	    value [0]
+doWork
+----
+c           Counter
+	    value [1]
+c	    Counter
+	    value [0]
+
+
+b.
+Counter
+value[0]
