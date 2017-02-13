@@ -2,16 +2,19 @@ a.
 
 Stack       Heap
 ----        ----
-c           Counter
+main
+----
+c ->        Counter (object)
 	    value [0]
 doWork
 ----
-c           Counter
+c ->        to above object
+c           Counter (above)
 	    value [1]
-c	    Counter
+c	    Counter (new)
 	    value [0]
 
 
 b.
 Counter
-value[0]
+value[1]
