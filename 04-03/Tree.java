@@ -12,14 +12,11 @@ public class Tree<T extends Comparable<T>> {
 	}
 
 	public void printHelp() {
-	    if (root.left == null) {
-		System.out.println(root.value);
-		if (root.right == null) {
-		    System.out.println(root.value);
-		} else {
-		    (root.right).printHelp();
-		}
-	    } else {
+	    if (root.right != null) {
+		(root.right).printHelp();
+	    }
+	    System.out.println (root.value);
+	    if (root.left != null) {
 		(root.left).printHelp();
 	    }
 	}
@@ -32,8 +29,12 @@ public class Tree<T extends Comparable<T>> {
     }
 
     public void printInOrder() {
-	(root.left).printHelp();
+	if (root.left != null) {
+	    (root.left).printHelp();
+	}
 	System.out.println(root.value);
-	(root.right).printHelp();
+	if (root.right != null) {
+	    (root.right).printHelp();
+	}
     }
 }
